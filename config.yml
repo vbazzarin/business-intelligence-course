@@ -1,0 +1,16 @@
+title: Business Intelligence
+description: Prima edizione del corso di Business Intelligence
+template:
+  repo: business-intelligence-template
+  name: business-intelligence
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
